@@ -3,11 +3,21 @@ function Car(make, model) {
 	this.make = make;
 	this.model = model;
 
-
+}
+car.prototype.getmakemodel=function(){
+	return '${this.make} ${this.model}';
+	
+} 
 function SportsCar(make, model, topSpeed) {
 	 Car.call(this, make, model);
 	 this.topSpeed = topSpeed;
 }
+Sportscar.prototype =object.create(car.prototype);
+SportsCar.prototype.constructor = SportsCar; 
+
+SportsCar.prototype.getmakemodel=function(){
+	return this.topSpeed;
+} 
 
 
 // Do not change the code below
