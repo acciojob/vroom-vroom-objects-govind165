@@ -1,3 +1,4 @@
+// Complete the js code
 function Car(make, model) {
     this.make = make;
     this.model = model;
@@ -22,4 +23,3 @@ SportsCar.prototype.getMakeModel = function () {
 // Do not change the code below
 window.Car = Car;
 window.SportsCar = SportsCar;
-
